@@ -1,4 +1,4 @@
-# Discord.js Code Snipeets v14
+# Discord.js Code Snippets v14
 
 Simple code snippets for discord.js v14
 
