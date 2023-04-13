@@ -1,0 +1,262 @@
+{
+    "New Button":{
+        "description": "Create a new Button",
+        "scope": "typescript",
+        "prefix": "new.button.djs",
+        "body": [
+            "new ButtonBuilder({customId: \"$1\", label: \"$2\", style: ButtonStyle.Success})"
+        ]
+    },
+    "New StringSelect":{
+        "description": "Create a new String Select",
+        "scope": "typescript",
+        "prefix": "new.stringselect.djs",
+        "body": [
+            "new StringSelectMenuBuilder({",
+            "    customId: \"$1\",",
+            "    placeholder: \"$2\",",
+            "    options: [",
+            "        { label: \"\", value: \"\", description: \"\" },",
+            "        { label: \"\", value: \"\", description: \"\" },",
+            "        { label: \"\", value: \"\", description: \"\" }",
+            "    ]",
+            "})",
+        ]
+    },
+    "New Modal":{
+        "description": "Create a new Modal",
+        "scope": "typescript",
+        "prefix": "new.modal.djs",
+        "body": [
+            "new ModalBuilder({",
+            "    customId: \"$1\",",
+            "    title: \"$2\",",
+            "    components: [",
+            "        new ActionRowBuilder<TextInputBuilder>({components: [",
+            "            new TextInputBuilder({",
+            "                customId: \"\",",
+            "                label: \"\",",
+            "                placeholder: \"\",",
+            "                style: TextInputStyle.Short,",
+            "                required: true",
+            "            })",
+            "        ]}),",
+            "        new ActionRowBuilder<TextInputBuilder>({components: [",
+            "            new TextInputBuilder({",
+            "                customId: \"\",",
+            "                label: \"\",",
+            "                placeholder: \"\",",
+            "                style: TextInputStyle.Paragraph,",
+            "                required: true",
+            "            })",
+            "        ]}),",
+            "    ]",
+            "})",
+        ]
+    },
+    "New ActionRow":{
+        "description": "Create a new ActionRow",
+        "scope": "typescript",
+        "prefix": "new.actionrow.djs",
+        "body": [
+            "new ActionRowBuilder<$1>({components: []})"
+        ]
+    },
+    "New TextInput":{
+        "description": "Create a new TextInput",
+        "scope": "typescript",
+        "prefix": "new.textinput.djs",
+        "body": [
+            "new TextInputBuilder({",
+            "    customId: \"$1\",",
+            "    label: \"$2\",",
+            "    placeholder: \"$3\",",
+            "    style: TextInputStyle.Short,",
+            "    required: true",
+            "})"
+        ]
+    },
+    "New Simple Embed":{
+        "description": "Create a new Embed",
+        "scope": "typescript",
+        "prefix": "new.embed.simple.djs",
+        "body": [
+            "new EmbedBuilder({",
+            "    title: \"$1\",",
+            "    description: \"$2\"",
+            "})"
+        ]
+    },
+    "New Normal Embed":{
+        "description": "Create a new Embed",
+        "scope": "typescript",
+        "prefix": "new.embed.normal.djs",
+        "body": [
+            "new EmbedBuilder({",
+            "    title: \"$1\",",
+            "    description: \"$2\",",
+            "    thumbnail: {url: \"$3\"},",
+            "    color: 23316831,",
+            "})"
+        ]
+    },
+    "New Complete Embed":{
+        "description": "Create a new Embed",
+        "scope": "typescript",
+        "prefix": "new.embed.complete.djs",
+        "body": [
+            "new EmbedBuilder({",
+            "    title: \"$1\",",
+            "    url: \"\",",
+            "    author: {",
+            "        name: \"$3\",",
+            "        iconURL: \"\"",
+            "    },",
+            "    description: \"$4\",",
+            "    thumbnail: {url: \"\"},",
+            "    image: {url: \"\"},",
+            "    color: 23316831,",
+            "})"
+        ]
+    },
+    "New Full Embed":{
+        "description": "Create a new Embed",
+        "scope": "typescript",
+        "prefix": "new.embed.full.djs",
+        "body": [
+            "new EmbedBuilder({",
+            "    title: \"$1\",",
+            "    url: \"\",",
+            "    author: {",
+            "        name: \"$2\",",
+            "        iconURL: \"\",",
+            "        url: \"\",",
+            "    },",
+            "    description: \"$3\",",
+            "    thumbnail: {url: \"\"},",
+            "    image: {url: \"\"},",
+            "    color: 23316831,",
+            "    footer: {",
+            "        text: \"$4\",",
+            "        iconURL: \"\",",
+            "    },",
+            "    timestamp: new Date(),",
+            "    fields: [",
+            "        {name: \"\", value: \"\", inline: false},",
+            "        {name: \"\", value: \"\", inline: false},",
+            "    ]",
+            "})"
+        ]
+    },
+    "Interaction Reply Content":{
+        "description": "Setup a content interaction reply",
+        "scope": "typescript",
+        "prefix": "reply.content.djs",
+        "body": [
+            "interaction.reply({ephemeral: true, content: \"$1\"})"
+        ]
+    },
+    "Interaction Reply Embeds":{
+        "description": "Setup a embeds interaction reply",
+        "scope": "typescript",
+        "prefix": "reply.embeds.djs",
+        "body": [
+            "interaction.reply({ephemeral: true, embeds: [$1]})"
+        ]
+    },
+    "Interaction Reply Embeds and Components":{
+        "description": "Setup a embeds and components interaction reply",
+        "scope": "typescript",
+        "prefix": "reply.embeds.components.djs",
+        "body": [
+            "interaction.reply({ephemeral: true, embeds: [], components: []})"
+        ]
+    },
+    "Interaction Reply Content and Components":{
+        "description": "Setup a content and components interaction reply",
+        "scope": "typescript",
+        "prefix": "reply.content.components.djs",
+        "body": [
+            "interaction.reply({ephemeral: true, content: \"$1\", components: [$2]})"
+        ]
+    },
+    "Interaction Reply Embeds and Files":{
+        "description": "Setup a embeds and files interaction reply",
+        "scope": "typescript",
+        "prefix": "reply.content.components.djs",
+        "body": [
+            "interaction.reply({ephemeral: true, embeds: [$1], files: [$2]})"
+        ]
+    },
+    "Interaction Reply Complete":{
+        "description": "Setup a complete interaction reply",
+        "scope": "typescript",
+        "prefix": "reply.complete.djs",
+        "body": [
+            "interaction.reply({ephemeral: true, embeds: [$1], files: [$2], components: [$3]})"
+        ]
+    },
+    "Create a Button Collector":{
+        "description": "Create a button collector",
+        "scope": "typescript",
+        "prefix": "collector.button.djs",
+        "body": [
+            "const collector = msg.createMessageComponentCollector({componentType: ComponentType.Button, time: 30_000})",
+            "collector.on(\"collect\", async subInteraction => {",
+            "    // do things",
+            "})"
+        ]
+    },
+    "Create a SelectMenu Collector":{
+        "description": "Create a selectmenu collector",
+        "scope": "typescript",
+        "prefix": "collector.selectmenu.djs",
+        "body": [
+            "const collector = msg.createMessageComponentCollector({componentType: ComponentType.StringSelect, time: 30_000})",
+            "collector.on(\"collect\", async subInteraction => {",
+            "    // do things",
+            "})"
+        ]
+    },
+    "Create a Message Collector":{
+        "description": "Create a selectmenu collector",
+        "scope": "typescript",
+        "prefix": "collector.selectmenu.djs",
+        "body": [
+            "const collector = channel.createMessageCollector({filter: m => m.author.id == interaction.user.id, time: 30_000})",
+            "collector.on(\"collect\", async message => {",
+            "    // do things",
+            "})"    
+        ]
+    },
+    "Await a Button Interaction":{
+        "description": "Await a button interaction",
+        "scope": "typescript",
+        "prefix": "await.button.djs",
+        "body": [
+            "const buttonInteraction = await msg.awaitMessageComponent({componentType: ComponentType.Button, time: 30_000}).catch(() => null)",
+            "if (buttonInteraction){",
+            "    // do things ...",
+            "}"
+        ]
+    },
+    "Await a SelectMenu Interaction":{
+        "description": "Await a SelectMenu Interaction",
+        "scope": "typescript",
+        "prefix": "await.selectmenu.djs",
+        "body": [
+            "const selectInteraction = await msg.awaitMessageComponent({componentType: ComponentType.StringSelect, time: 30_000}).catch(() => null)",
+            "if (selectInteraction){",
+            "    // do things ...",
+            "}"
+        ]
+    },
+    "Await a Message":{
+        "description": "Await a SelectMenu Interaction",
+        "scope": "typescript",
+        "prefix": "await.message.djs",
+        "body": [
+            "const messages = await channel.awaitMessages({time: 30_000, max: 1, filter: m => m.author.id == interaction.user.id}).catch(() => null)"
+        ]
+    },
+}

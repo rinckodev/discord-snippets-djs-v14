@@ -1,0 +1,22 @@
+{
+  "name": "discordjsv14ts",
+  "displayName": "Discord.js Code Snippets v14 - Typescript",
+  "description": "Code snippets for discord.js v14 typescript",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.77.0"
+  },
+  "publisher": "rinckodev",
+  "icon": "icon.png",
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "typescript",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  }
+}
