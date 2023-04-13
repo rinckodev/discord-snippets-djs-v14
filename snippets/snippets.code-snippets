@@ -77,7 +77,7 @@
         ]
     },
     "New Simple Embed":{
-        "description": "Create a new Embed",
+        "description": "Create a new simple embed",
         "scope": "typescript",
         "prefix": "new.embed.simple.djs",
         "body": [
@@ -88,7 +88,7 @@
         ]
     },
     "New Normal Embed":{
-        "description": "Create a new Embed",
+        "description": "Create a new normal embed",
         "scope": "typescript",
         "prefix": "new.embed.normal.djs",
         "body": [
@@ -101,7 +101,7 @@
         ]
     },
     "New Complete Embed":{
-        "description": "Create a new Embed",
+        "description": "Create a new complete embed",
         "scope": "typescript",
         "prefix": "new.embed.complete.djs",
         "body": [
@@ -120,7 +120,7 @@
         ]
     },
     "New Full Embed":{
-        "description": "Create a new Embed",
+        "description": "Create a new full embed",
         "scope": "typescript",
         "prefix": "new.embed.full.djs",
         "body": [
@@ -169,7 +169,7 @@
         "scope": "typescript",
         "prefix": "reply.embeds.components.djs",
         "body": [
-            "interaction.reply({ephemeral: true, embeds: [], components: []})"
+            "interaction.reply({ephemeral: true, embeds: [$1], components: [$2]})"
         ]
     },
     "Interaction Reply Content and Components":{
@@ -183,7 +183,7 @@
     "Interaction Reply Embeds and Files":{
         "description": "Setup a embeds and files interaction reply",
         "scope": "typescript",
-        "prefix": "reply.content.components.djs",
+        "prefix": "reply.embeds.files.djs",
         "body": [
             "interaction.reply({ephemeral: true, embeds: [$1], files: [$2]})"
         ]
@@ -219,9 +219,9 @@
         ]
     },
     "Create a Message Collector":{
-        "description": "Create a selectmenu collector",
+        "description": "Create a message collector",
         "scope": "typescript",
-        "prefix": "collector.selectmenu.djs",
+        "prefix": "collector.message.djs",
         "body": [
             "const collector = channel.createMessageCollector({filter: m => m.author.id == interaction.user.id, time: 30_000})",
             "collector.on(\"collect\", async message => {",
@@ -241,7 +241,7 @@
         ]
     },
     "Await a SelectMenu Interaction":{
-        "description": "Await a SelectMenu Interaction",
+        "description": "Await a selectmenu Interaction",
         "scope": "typescript",
         "prefix": "await.selectmenu.djs",
         "body": [
@@ -252,11 +252,22 @@
         ]
     },
     "Await a Message":{
-        "description": "Await a SelectMenu Interaction",
+        "description": "Await a message Interaction",
         "scope": "typescript",
         "prefix": "await.message.djs",
         "body": [
             "const messages = await channel.awaitMessages({time: 30_000, max: 1, filter: m => m.author.id == interaction.user.id}).catch(() => null)"
+        ]
+    },
+    "Await a Modal Interaction":{
+        "description": "Await a modal interaction",
+        "scope": "typescript",
+        "prefix": "await.modal.djs",
+        "body": [
+            "const modalInteraction = await interaction.awaitModalSubmit({time: 30_000, filter: m => m.user.id == interaction.user.id}).catch(() => null)",
+            "if (modalInteraction){",
+            "    // do things...",
+            "}"
         ]
     },
 }

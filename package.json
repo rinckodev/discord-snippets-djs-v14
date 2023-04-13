@@ -7,6 +7,9 @@
     "vscode": "^1.77.0"
   },
   "publisher": "rinckodev",
+  "repository": {
+    "url": "https://github.com/rinckonobre/discord-snippets-djs-v14"
+  },
   "icon": "icon.png",
   "categories": [
     "Snippets"
