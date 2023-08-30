@@ -1,9 +1,11 @@
 # Change Log
 
-All notable changes to the "discordjsv14" extension will be documented in this file.
+## [0.0.2]
+- Add find channel snippet
+- Add get channel snippet
+- Add get role snippet
+- Add get member snippet
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
-
-## [Unreleased]
+## [0.0.1]
 
 - Initial release

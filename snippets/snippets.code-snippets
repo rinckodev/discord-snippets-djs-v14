@@ -2,7 +2,7 @@
     "New Button":{
         "description": "Create a new Button",
         "scope": "typescript",
-        "prefix": "new.button.djs",
+        "prefix": "new.button.djs.v14",
         "body": [
             "new ButtonBuilder({customId: \"$1\", label: \"$2\", style: ButtonStyle.Success})"
         ]
@@ -10,7 +10,7 @@
     "New StringSelect":{
         "description": "Create a new String Select",
         "scope": "typescript",
-        "prefix": "new.stringselect.djs",
+        "prefix": "new.stringselect.djs.v14",
         "body": [
             "new StringSelectMenuBuilder({",
             "    customId: \"$1\",",
@@ -23,33 +23,50 @@
             "})",
         ]
     },
+    "New ChannelSelect":{
+        "description": "Create a new Channel Select",
+        "scope": "typescript",
+        "prefix": "new.channelselect.djs.v14",
+        "body": [
+            "new ChannelSelectMenuBuilder({",
+            "    customId: \"\",",
+            "    placeholder: \"\",",
+            "    channelTypes: [ChannelType.GuildText]",
+            "});"
+        ]
+    },
+    "New RoleSelect":{
+        "description": "Create a new Role Select",
+        "scope": "typescript",
+        "prefix": "new.roleselect.djs.v14",
+        "body": [
+            "new RoleSelectMenuBuilder({",
+            "    customId: \"\",",
+            "    placeholder: \"\",",
+            "});"
+        ]
+    },
+    "New UserSelect":{
+        "description": "Create a new User Select",
+        "scope": "typescript",
+        "prefix": "new.userselect.djs.v14",
+        "body": [
+            "new UserSelectMenuBuilder({",
+            "    customId: \"\",",
+            "    placeholder: \"\",",
+            "});"
+        ]
+    },
     "New Modal":{
         "description": "Create a new Modal",
         "scope": "typescript",
-        "prefix": "new.modal.djs",
+        "prefix": "new.modal.djs.v14",
         "body": [
             "new ModalBuilder({",
             "    customId: \"$1\",",
             "    title: \"$2\",",
             "    components: [",
-            "        new ActionRowBuilder<TextInputBuilder>({components: [",
-            "            new TextInputBuilder({",
-            "                customId: \"\",",
-            "                label: \"\",",
-            "                placeholder: \"\",",
-            "                style: TextInputStyle.Short,",
-            "                required: true",
-            "            })",
-            "        ]}),",
-            "        new ActionRowBuilder<TextInputBuilder>({components: [",
-            "            new TextInputBuilder({",
-            "                customId: \"\",",
-            "                label: \"\",",
-            "                placeholder: \"\",",
-            "                style: TextInputStyle.Paragraph,",
-            "                required: true",
-            "            })",
-            "        ]}),",
+            "        ",
             "    ]",
             "})",
         ]
@@ -57,7 +74,7 @@
     "New ActionRow":{
         "description": "Create a new ActionRow",
         "scope": "typescript",
-        "prefix": "new.actionrow.djs",
+        "prefix": "new.actionrow.djs.v14",
         "body": [
             "new ActionRowBuilder<$1>({components: []})"
         ]
@@ -65,7 +82,7 @@
     "New TextInput":{
         "description": "Create a new TextInput",
         "scope": "typescript",
-        "prefix": "new.textinput.djs",
+        "prefix": "new.textinput.djs.v14",
         "body": [
             "new TextInputBuilder({",
             "    customId: \"$1\",",
@@ -79,7 +96,7 @@
     "New Simple Embed":{
         "description": "Create a new simple embed",
         "scope": "typescript",
-        "prefix": "new.embed.simple.djs",
+        "prefix": "new.embed.simple.djs.v14",
         "body": [
             "new EmbedBuilder({",
             "    title: \"$1\",",
@@ -90,7 +107,7 @@
     "New Normal Embed":{
         "description": "Create a new normal embed",
         "scope": "typescript",
-        "prefix": "new.embed.normal.djs",
+        "prefix": "new.embed.normal.djs.v14",
         "body": [
             "new EmbedBuilder({",
             "    title: \"$1\",",
@@ -103,7 +120,7 @@
     "New Complete Embed":{
         "description": "Create a new complete embed",
         "scope": "typescript",
-        "prefix": "new.embed.complete.djs",
+        "prefix": "new.embed.complete.djs.v14",
         "body": [
             "new EmbedBuilder({",
             "    title: \"$1\",",
@@ -122,7 +139,7 @@
     "New Full Embed":{
         "description": "Create a new full embed",
         "scope": "typescript",
-        "prefix": "new.embed.full.djs",
+        "prefix": "new.embed.full.djs.v14",
         "body": [
             "new EmbedBuilder({",
             "    title: \"$1\",",
@@ -151,7 +168,7 @@
     "Interaction Reply Content":{
         "description": "Setup a content interaction reply",
         "scope": "typescript",
-        "prefix": "reply.content.djs",
+        "prefix": "reply.content.djs.v14",
         "body": [
             "interaction.reply({ephemeral: true, content: \"$1\"})"
         ]
@@ -159,7 +176,7 @@
     "Interaction Reply Embeds":{
         "description": "Setup a embeds interaction reply",
         "scope": "typescript",
-        "prefix": "reply.embeds.djs",
+        "prefix": "reply.embeds.djs.v14",
         "body": [
             "interaction.reply({ephemeral: true, embeds: [$1]})"
         ]
@@ -167,7 +184,7 @@
     "Interaction Reply Embeds and Components":{
         "description": "Setup a embeds and components interaction reply",
         "scope": "typescript",
-        "prefix": "reply.embeds.components.djs",
+        "prefix": "reply.embeds.components.djs.v14",
         "body": [
             "interaction.reply({ephemeral: true, embeds: [$1], components: [$2]})"
         ]
@@ -175,7 +192,7 @@
     "Interaction Reply Content and Components":{
         "description": "Setup a content and components interaction reply",
         "scope": "typescript",
-        "prefix": "reply.content.components.djs",
+        "prefix": "reply.content.components.djs.v14",
         "body": [
             "interaction.reply({ephemeral: true, content: \"$1\", components: [$2]})"
         ]
@@ -183,7 +200,7 @@
     "Interaction Reply Embeds and Files":{
         "description": "Setup a embeds and files interaction reply",
         "scope": "typescript",
-        "prefix": "reply.embeds.files.djs",
+        "prefix": "reply.embeds.files.djs.v14",
         "body": [
             "interaction.reply({ephemeral: true, embeds: [$1], files: [$2]})"
         ]
@@ -191,7 +208,7 @@
     "Interaction Reply Complete":{
         "description": "Setup a complete interaction reply",
         "scope": "typescript",
-        "prefix": "reply.complete.djs",
+        "prefix": "reply.complete.djs.v14",
         "body": [
             "interaction.reply({ephemeral: true, embeds: [$1], files: [$2], components: [$3]})"
         ]
@@ -199,7 +216,7 @@
     "Create a Button Collector":{
         "description": "Create a button collector",
         "scope": "typescript",
-        "prefix": "collector.button.djs",
+        "prefix": "collector.button.djs.v14",
         "body": [
             "const collector = msg.createMessageComponentCollector({componentType: ComponentType.Button, time: 30_000})",
             "collector.on(\"collect\", async subInteraction => {",
@@ -210,7 +227,7 @@
     "Create a SelectMenu Collector":{
         "description": "Create a selectmenu collector",
         "scope": "typescript",
-        "prefix": "collector.selectmenu.djs",
+        "prefix": "collector.selectmenu.djs.v14",
         "body": [
             "const collector = msg.createMessageComponentCollector({componentType: ComponentType.StringSelect, time: 30_000})",
             "collector.on(\"collect\", async subInteraction => {",
@@ -221,7 +238,7 @@
     "Create a Message Collector":{
         "description": "Create a message collector",
         "scope": "typescript",
-        "prefix": "collector.message.djs",
+        "prefix": "collector.message.djs.v14",
         "body": [
             "const collector = channel.createMessageCollector({filter: m => m.author.id == interaction.user.id, time: 30_000})",
             "collector.on(\"collect\", async message => {",
@@ -232,7 +249,7 @@
     "Await a Button Interaction":{
         "description": "Await a button interaction",
         "scope": "typescript",
-        "prefix": "await.button.djs",
+        "prefix": "await.button.djs.v14",
         "body": [
             "const buttonInteraction = await msg.awaitMessageComponent({componentType: ComponentType.Button, time: 30_000}).catch(() => null)",
             "if (buttonInteraction){",
@@ -243,7 +260,7 @@
     "Await a SelectMenu Interaction":{
         "description": "Await a selectmenu Interaction",
         "scope": "typescript",
-        "prefix": "await.selectmenu.djs",
+        "prefix": "await.selectmenu.djs.v14",
         "body": [
             "const selectInteraction = await msg.awaitMessageComponent({componentType: ComponentType.StringSelect, time: 30_000}).catch(() => null)",
             "if (selectInteraction){",
@@ -254,7 +271,7 @@
     "Await a Message":{
         "description": "Await a message Interaction",
         "scope": "typescript",
-        "prefix": "await.message.djs",
+        "prefix": "await.message.djs.v14",
         "body": [
             "const messages = await channel.awaitMessages({time: 30_000, max: 1, filter: m => m.author.id == interaction.user.id}).catch(() => null)"
         ]
@@ -262,12 +279,52 @@
     "Await a Modal Interaction":{
         "description": "Await a modal interaction",
         "scope": "typescript",
-        "prefix": "await.modal.djs",
+        "prefix": "await.modal.djs.v14",
         "body": [
             "const modalInteraction = await interaction.awaitModalSubmit({time: 30_000, filter: m => m.user.id == interaction.user.id}).catch(() => null)",
             "if (modalInteraction){",
             "    // do things...",
             "}"
+        ]
+    },
+    "Find Channel by Name":{
+        "description": "Find a channel by name",
+        "scope": "typescript",
+        "prefix": "find.channel.name.v14",
+        "body": [
+            "guild.channels.cache.find(c => c.name == $1);"
+        ]
+    },
+    "Find Channel by Name and Type":{
+        "description": "Find a channel by name and type",
+        "scope": "typescript",
+        "prefix": "find.channel.name.type.v14",
+        "body": [
+            "guild.channels.cache.find(c => c.name == $1 && ChannelType.$2);"
+        ]
+    },
+    "Get Channel by id":{
+        "description": "Get a channel by id",
+        "scope": "typescript",
+        "prefix": "get.channel.v14",
+        "body": [
+            "guild.channels.cache.get($1);"
+        ]
+    },
+    "Get Role by id":{
+        "description": "Get a role by id",
+        "scope": "typescript",
+        "prefix": "get.role.v14",
+        "body": [
+            "guild.roles.cache.get($1);"
+        ]
+    },
+    "Get Member by id":{
+        "description": "Get a member by id",
+        "scope": "typescript",
+        "prefix": "get.member.v14",
+        "body": [
+            "guild.members.cache.get($1);"
         ]
     },
 }

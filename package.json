@@ -1,7 +1,7 @@
 {
   "name": "discordjsv14ts",
-  "displayName": "Discord.js Code Snippets v14 - Typescript",
-  "description": "Code snippets for discord.js v14 typescript",
+  "displayName": "Discord.js v14 Code Snippets - Typescript",
+  "description": "Code snippets for discord.js v14 with typescript",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.77.0"
@@ -10,7 +10,7 @@
   "repository": {
     "url": "https://github.com/rinckonobre/discord-snippets-djs-v14"
   },
-  "icon": "icon.png",
+  "icon": "assets/icon.png",
   "categories": [
     "Snippets"
   ],
