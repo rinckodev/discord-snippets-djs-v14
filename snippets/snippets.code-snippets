@@ -4,7 +4,11 @@
         "scope": "typescript",
         "prefix": "new.button.djs.v14",
         "body": [
-            "new ButtonBuilder({customId: \"$1\", label: \"$2\", style: ButtonStyle.Success})"
+            "new ButtonBuilder({",
+            "    customId: \"\"," ,
+            "    label: \"\", ",
+            "    style: ButtonStyle.Success",
+            "})"
         ]
     },
     "New StringSelect":{
@@ -16,7 +20,6 @@
             "    customId: \"$1\",",
             "    placeholder: \"$2\",",
             "    options: [",
-            "        { label: \"\", value: \"\", description: \"\" },",
             "        { label: \"\", value: \"\", description: \"\" },",
             "        { label: \"\", value: \"\", description: \"\" }",
             "    ]",

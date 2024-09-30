@@ -2,7 +2,7 @@
   "name": "discordjsv14ts",
   "displayName": "Discord.js v14 Code Snippets - Typescript",
   "description": "Code snippets for discord.js v14 with typescript",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "engines": {
     "vscode": "^1.77.0"
   },
