@@ -173,7 +173,7 @@
         "scope": "typescript",
         "prefix": "reply.content.djs.v14",
         "body": [
-            "interaction.reply({ephemeral: true, content: \"$1\"})"
+            "interaction.reply({ flags: [\"Ephemeral\"], content: \"$1\"})"
         ]
     },
     "Interaction Reply Embeds":{
@@ -181,7 +181,7 @@
         "scope": "typescript",
         "prefix": "reply.embeds.djs.v14",
         "body": [
-            "interaction.reply({ephemeral: true, embeds: [$1]})"
+            "interaction.reply({ flags: [\"Ephemeral\"], embeds: [$1]})"
         ]
     },
     "Interaction Reply Embeds and Components":{
@@ -189,7 +189,7 @@
         "scope": "typescript",
         "prefix": "reply.embeds.components.djs.v14",
         "body": [
-            "interaction.reply({ephemeral: true, embeds: [$1], components: [$2]})"
+            "interaction.reply({ flags: [\"Ephemeral\"], embeds: [$1], components: [$2]})"
         ]
     },
     "Interaction Reply Content and Components":{
@@ -197,7 +197,7 @@
         "scope": "typescript",
         "prefix": "reply.content.components.djs.v14",
         "body": [
-            "interaction.reply({ephemeral: true, content: \"$1\", components: [$2]})"
+            "interaction.reply({ flags: [\"Ephemeral\"], content: \"$1\", components: [$2]})"
         ]
     },
     "Interaction Reply Embeds and Files":{
@@ -205,7 +205,7 @@
         "scope": "typescript",
         "prefix": "reply.embeds.files.djs.v14",
         "body": [
-            "interaction.reply({ephemeral: true, embeds: [$1], files: [$2]})"
+            "interaction.reply({ flags: [\"Ephemeral\"], embeds: [$1], files: [$2]})"
         ]
     },
     "Interaction Reply Complete":{
@@ -213,7 +213,7 @@
         "scope": "typescript",
         "prefix": "reply.complete.djs.v14",
         "body": [
-            "interaction.reply({ephemeral: true, embeds: [$1], files: [$2], components: [$3]})"
+            "interaction.reply({ flags: [\"Ephemeral\"], embeds: [$1], files: [$2], components: [$3]})"
         ]
     },
     "Create a Button Collector":{
